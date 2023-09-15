@@ -1,0 +1,1 @@
+[{"name":"951169d3-0d70-4d17-8839-4b81e5edb8ee","fromTable":"IPLMatchData","fromColumn":"date","toTable":"LocalDateTable_25a4e838-ff1a-41f9-997d-e59dcbdcf51d","toColumn":"Date","joinOnDateBehavior":"datePartOnly","state":null}]

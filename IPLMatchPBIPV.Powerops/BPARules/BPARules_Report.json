@@ -1,0 +1,98 @@
+[
+  {
+    "ID": "REMOVE_UNUSED_CUSTOM_VISUALS",
+    "Name": "Remove custom visuals which are not used in the report",
+    "Category": "Visuals",
+    "Description": "Remove custom visuals which are not used in the report.",
+    "Severity": 2,
+    "Scope": "Custom visuals",
+    "Expression": "CustomVisuals.Used == false",
+    "CompatibilityLevel": 1200,
+    "IsDisabled": false,
+    "Type": "System"
+  },
+  {
+    "ID": "REDUCE_VISIBLE_VISUALS_COUNT",
+    "Name": "Reduce the number of visible visuals on the page",
+    "Category": "Visuals",
+    "Description": "Reduce the number of visible visuals on the page.",
+    "Severity": 3,
+    "Scope": "Visuals",
+    "Expression": "VisibleVisualsOnPage.Count > 30",
+    "CompatibilityLevel": 1200,
+    "IsDisabled": false,
+    "Type": "System"
+  },
+  {
+    "ID": "REDUCE_OBJECTS_WITHIN_VISUAL",
+    "Name": "Reduce the number of objects within visuals",
+    "Category": "Visuals",
+    "Description": "Reduce the number of objects within visuals.",
+    "Severity": 2,
+    "Scope": "Objects",
+    "Expression": "ObjectsInVisual.Count > 7",
+    "CompatibilityLevel": 1200,
+    "IsDisabled": false,
+    "Type": "System"
+  },
+  {
+    "ID": "REDUCE_FILTERING_IN_VISUALS",
+    "Name": "Reduce usage of TopN filtering within visuals",
+    "Category": "Visuals",
+    "Description": "Reduce usage of TopN filtering within visuals.",
+    "Severity": 3,
+    "Scope": "Filters",
+    "Expression": "VisualFilter.Name == TopN",
+    "CompatibilityLevel": 1200,
+    "IsDisabled": false,
+    "Type": "System"
+  },
+  {
+    "ID": "REDUCE_FILTERING_ON_MEASURES",
+    "Name": "Reduce usage of filters on measures",
+    "Category": "Measures",
+    "Description": "Reduce usage of filters on measures.",
+    "Severity": 2,
+    "Scope": "Filters",
+    "Expression": "VisualFilter.Used.ObjectType == Measure",
+    "CompatibilityLevel": 1200,
+    "IsDisabled": false,
+    "Type": "System"
+  },
+  {
+    "ID": "DONT_SET_SHOW_ITEM_WITH_NO_DATA",
+    "Name": "Avoid setting 'Show items with no data' on columns",
+    "Category": "Visuals",
+    "Description": "Avoid setting 'Show items with no data' on columns.",
+    "Severity": 3,
+    "Scope": "Columns",
+    "Expression": "Visual.ShowItemsWithNoData == false",
+    "CompatibilityLevel": 1200,
+    "IsDisabled": false,
+    "Type": "System"
+  },
+  {
+    "ID": "AVOID_LENGTHY_REPORT_PAGES",
+    "Name": "Avoid tall report pages with vertical scrolling",
+    "Category": "Pages",
+    "Description": "Avoid tall report pages with vertical scrolling.",
+    "Severity": 2,
+    "Scope": "Height",
+    "Expression": "Page.Height > 720",
+    "CompatibilityLevel": 1200,
+    "IsDisabled": false,
+    "Type": "System"
+  },
+  {
+    "ID": "REDUCE_CUSTOM_VISUAL_USAGE",
+    "Name": "Reduce usage of custom visuals",
+    "Category": "Visuals",
+    "Description": "Reduce usage of custom visuals.",
+    "Severity": 3,
+    "Scope": "Custom visuals",
+    "Expression": "CustomVisuals.Count > 2",
+    "CompatibilityLevel": 1200,
+    "IsDisabled": false,
+    "Type": "System"
+  }
+]

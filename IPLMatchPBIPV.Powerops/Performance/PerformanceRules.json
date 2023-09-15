@@ -1,0 +1,83 @@
+[
+  {
+    "id": 1,
+    "label": "Page Load Time",
+    "type": "sec",
+    "min": 0,
+    "max": 300,
+    "success": 10,
+    "warning": 70
+  },
+  {
+    "id": 2,
+    "label": "Landing Page Load Time",
+    "type": "sec",
+    "min": 0,
+    "max": 300,
+    "success": 10,
+    "warning": 80
+  },
+  {
+    "id": 3,
+    "label": "Max. DAX Query Execution Time",
+    "type": "sec",
+    "min": 0,
+    "max": 120,
+    "success": 10,
+    "warning": 80
+  },
+  {
+    "id": 4,
+    "label": "Total DAX Execution Time Per Page",
+    "type": "sec",
+    "min": 0,
+    "max": 120,
+    "success": 10,
+    "warning": 50
+  },
+  {
+    "id": 5,
+    "label": "Visual Max Loading Time",
+    "type": "sec",
+    "min": 0,
+    "max": 120,
+    "success": 10,
+    "warning": 60
+  },
+  {
+    "id": 6,
+    "label": "No.Of All Visuals Per Page",
+    "type": "item",
+    "min": 0,
+    "max": 50,
+    "success": 10,
+    "warning": 20
+  },
+  {
+    "id": 7,
+    "label": "No.Of Non Hidden Visuals Per Page",
+    "type": "item",
+    "min": 0,
+    "max": 50,
+    "success": 10,
+    "warning": 20
+  },
+  {
+    "id": 8,
+    "label": "No.Of Visuals(Excluding Slicers) Per Page",
+    "type": "item",
+    "min": 0,
+    "max": 50,
+    "success": 10,
+    "warning": 20
+  },
+  {
+    "id": 9,
+    "label": "No.Of DAX Queries Per Page",
+    "type": "item",
+    "min": 0,
+    "max": 50,
+    "success": 10,
+    "warning": 20
+  }
+]
